@@ -11,4 +11,3 @@ def not_blank(question):
             print("Please enter something.")
 
 name = not_blank("Name: ")
-
