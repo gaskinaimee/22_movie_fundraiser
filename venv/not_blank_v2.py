@@ -1,5 +1,5 @@
 
-def not_blank(question):
+def not_blank(question, error_message, enter_input):
     valid = False
 
     while not valid:
@@ -8,7 +8,8 @@ def not_blank(question):
         if response != "":
             return response
         else:
-            print("Please enter something.")
+            print(error_message, enter_input)
 
-name = not_blank("Name: ")
+name = not_blank("Name: ", "Sorry, this can't be blank,", "please enter your name.")
+
 
