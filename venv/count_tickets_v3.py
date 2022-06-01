@@ -22,13 +22,14 @@ while amount > 0:
             name_list.append(add_name)
             print(name_list)
             amount += 1
-            print("You have brought {} tickets. There are still {} tickets available.".format(amount, max_tickets - amount))
-        if remove_or_add == "r":
+            print("You have brought {} tickets.".format(amount))
+        elif remove_or_add == "r":
             remove_name = input("Enter a name to remove: ".lower())
             name_list.remove(remove_name)
             print(name_list)
             amount -= 1
-            print("You have brought {} tickets. There are still {} tickets available.".format(amount, max_tickets - amount))
+            print("You have brought {} tickets.".format(amount))
+
         break
 
 
